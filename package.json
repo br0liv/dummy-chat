@@ -1,0 +1,56 @@
+{
+  "name": "dummy-chat",
+  "version": "1.0.0",
+  "description": "This is a simple chat application developed using NodeJs, Socket.io, React and Redux.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "start": "webpack -p && jest --verbose && node Server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "express": "^4.15.2",
+    "immutable": "^3.8.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.4",
+    "redux": "^3.6.0",
+    "socket.io": "^2.0.1",
+    "socket.io-client": "^2.0.1",
+    "webpack": "^2.5.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ],
+    "plugins": [
+      "transform-object-assign"
+    ]
+  },
+  "jest": {
+    "transform": {".*": "<rootDir>/node_modules/babel-jest"},
+    "moduleFileExtensions": ["js", "jsx"],
+    "moduleDirectories": ["node_modules","src"],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/static/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/static/__mocks__/styleMock.js"
+    }
+  },
+  "devDependencies": {
+    "babel-jest": "^20.0.1",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "css-loader": "^0.28.1",
+    "file-loader": "^0.11.1",
+    "image-webpack-loader": "^3.3.1",
+    "jest": "^20.0.1",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.3",
+    "style-loader": "^0.17.0"
+  }
+}
