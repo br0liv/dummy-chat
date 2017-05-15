@@ -19,8 +19,8 @@ This is a simple chat application developed using NodeJs, Socket.io, React and R
 - Browse to http://localhost:4000 to access the application
 
 ## Command list
-- Run `npm start` Run webpack, jest tests and start the server
-- Run `npm test` Run Jest tests
+- `npm start` Run webpack, jest tests and start the server
+- `npm test` Run Jest tests
 
 ## Screen capture
 ![Screen capture](https://raw.github.com/br0liv/dummy-chat/master/screen_capture.png "Screen capture")
